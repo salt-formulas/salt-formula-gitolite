@@ -69,6 +69,5 @@ gitolite_setup:
       - file: gitolite_conf
     - require:
       - file: gitolite_dirs
-    - creates: {{ server.home_dir }}/.gitolite/conf/gitolite.conf-compiled.pm
 
 {%- endif %}

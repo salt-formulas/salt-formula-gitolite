@@ -12,22 +12,22 @@ Single gitolite service
 
 .. code-block:: yaml
 
-server:
-  user:
-    testusr:
-      key: ssh-rsa ...
-  group:
-    admin:
-      members:
-        - testusr
-  repository:
-    gitolite-admin:
-      name: gitolite-admin
-      permission:
-        "RW+":
-          - "@admin"
-        "RW (?!master|develop|release/)":
-          - testusr
+    server:
+      user:
+        testusr:
+          key: ssh-rsa ...
+      group:
+        admin:
+          members:
+            - testusr
+      repository:
+        gitolite-admin:
+          name: gitolite-admin
+          permission:
+            "RW+":
+              - "@admin"
+            "RW (?!master|develop|release/)":
+              - testusr
 
 More information
 ================

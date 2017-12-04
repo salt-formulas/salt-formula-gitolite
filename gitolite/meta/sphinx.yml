@@ -1,0 +1,12 @@
+{%- from "gitolite/map.jinja" import server with context %}
+# Fill in documentation details
+doc:
+  name: gitolite
+  description: Gitolite server
+  role:
+    server:
+      name: server
+      param:
+        home_dir:
+          name: "Home directory"
+          value: "{{ server.home_dir }}"

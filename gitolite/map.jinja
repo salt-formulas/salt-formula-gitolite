@@ -1,0 +1,11 @@
+
+{%- load_yaml as base_defaults %}
+
+Debian:
+  pkgs:
+    - gitolite3
+  home_dir: /var/lib/git
+
+{%- endload %}
+
+{%- set server = salt['grains.filter_by'](base_defaults, merge=salt['pillar.get']('gitolite:server')) %}

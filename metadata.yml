@@ -1,0 +1,3 @@
+name: "gitolite"
+version: "2017.12"
+source: "https://github.com/salt-formulas/salt-formula-gitolite"

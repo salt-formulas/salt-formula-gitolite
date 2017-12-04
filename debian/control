@@ -1,0 +1,15 @@
+Source: salt-formula-gitolite
+Maintainer: Filip Pytloun filip@pytloun.cz
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 9), salt-master, python, python-yaml
+Standards-Version: 3.9.6
+Homepage: https://github.com/salt-formulas
+Vcs-Browser: https://github.com/salt-formulas/salt-formula-gitolite
+Vcs-Git: https://github.com/salt-formulas/salt-formula-gitolite.git
+
+Package: salt-formula-gitolite
+Architecture: all
+Depends: ${misc:Depends}, salt-master, reclass
+Description: gitolite salt formula
+ Install and configure gitolite system.

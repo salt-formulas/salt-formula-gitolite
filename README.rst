@@ -1,14 +1,16 @@
 
-==================================
-gitolite formula
-==================================
+================
+Gitolite Formula
+================
 
-Service gitolite description
+Gitolite allows you to setup git hosting on a central server, with fine-
+grained access control and many more powerful features.
 
-Sample pillars
-==============
 
-Single gitolite service
+Sample Metadata
+===============
+
+Single Gitolite service
 
 .. code-block:: yaml
 
@@ -29,8 +31,9 @@ Single gitolite service
             "RW (?!master|develop|release/)":
               - testusr
 
-More information
-================
+
+References
+==========
 
 * http://gitolite.com/gitolite/index.html
 
@@ -65,8 +68,3 @@ Any questions or feedback is always welcome so feel free to join our IRC
 channel:
 
     #salt-formulas @ irc.freenode.net
-
-Read more
-=========
-
-* links
